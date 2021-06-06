@@ -16,8 +16,8 @@ class Note extends React.Component {
         return (
             <div>
                 {
-                    notes.map((noteContent) => (
-                        <div className="note">
+                    notes.map((noteContent, note_index) => (
+                        <div className="note" key={`Note_${note_index}`}>
                             <h1>{noteContent.header}</h1>
                             <p>{noteContent.content}</p>
                         </div>
