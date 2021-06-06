@@ -13,16 +13,18 @@ const notes = [{
 
 class Note extends React.Component {
     render() {
-        <div>
-            {
-                notes.map((noteContent) => (
-                    <div className="note">
-                        <h1>{nodeContent.header}</h1>
-                        <p>{nodeContent.content}</p>
-                    </div>
-                ))
-            }
-        </div>
+        return (
+            <div>
+                {
+                    notes.map((noteContent) => (
+                        <div className="note">
+                            <h1>{noteContent.header}</h1>
+                            <p>{noteContent.content}</p>
+                        </div>
+                    ))
+                }
+            </div>
+        );
     }
 
 }
